@@ -1,0 +1,96 @@
+<div class="wrapper signupPage">
+    <%- include('../error/flashMessages') %>
+  <div class="container mt-4">
+    <div class="authForm">
+      <div class="formContainer">
+        <form action="/signup" method="POST" enctype="multipart/form-data">
+          <h4>Create an account</h4>
+          <br />
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fa fa-address-card-o" aria-hidden="true"></i
+              ></span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fa fa-user-o" aria-hidden="true"></i
+              ></span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Username"
+              name="username"
+              required
+            />
+          </div>
+
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fa fa-envelope-o" aria-hidden="true"></i
+              ></span>
+            </div>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fa fa-key" aria-hidden="true"></i
+              ></span>
+            </div>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+          </div>
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fa fa-key" aria-hidden="true"></i
+              ></span>
+            </div>
+            <input
+              type="password"
+              class="form-control"
+              id="confirm-password"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn btn-success btn-block">
+            Registration
+          </button>
+        </form>
+        
+        <%- include('oauth',{method:"Sign up"})%>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.searchUser {
+  .row {
+    justify-content: center;
+    margin-top: 50px;
+
+    > div {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 1px 4px 10px 0px #9e9a9adb;
+      padding: 60px;
+      .no-request {
+        text-align: center;
+      }
+    }
+    .singleRequest {
+      display: flex;
+    }
+  }
+  .request-action {
+    display: flex;
+    flex-direction: row;
+    form {
+      padding: 0 10px;
+    }
+  }
+  img {
+    widows: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+    a {
+      font-size: 30px;
+      text-decoration: none;
+      font-family: 'Alatsi', sans-serif;
+    }
+  }
+}

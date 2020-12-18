@@ -1,0 +1,54 @@
+<div class="wrapper loginPage">
+  <%- include('../error/flashMessages') %>
+  <div class="container mt-4">
+    <div class="authForm">
+      <div class="formContainer">
+        <form action="/login" method="POST">
+          <h4>Login into Your Account</h4>
+          <br />
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fa fa-user-o" aria-hidden="true"></i
+              ></span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder=" Enter email or username"
+              name="emailOrUsername"
+              required
+            />
+          </div>
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fa fa-key" aria-hidden="true"></i
+              ></span>
+            </div>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+              name="password"
+              required
+            />
+          </div>
+          <div class="form-group input-group">
+            <a href="/reset_password">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Login
+          </button>
+        </form>
+        <br />
+
+        <%- include('oauth',{method:"Login"}) %>
+      </div>
+    </div>
+  </div>
+</div>

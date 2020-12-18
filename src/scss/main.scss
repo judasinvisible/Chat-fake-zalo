@@ -1,0 +1,36 @@
+@import './scssVariable.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  .wrapper {
+    min-height: 100vh;
+    padding-bottom: 10px;
+    padding-top: 56px;
+    background: $linear-background;
+  }
+}
+
+.authForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .formContainer {
+    width: 550px;
+    min-height: 368px;
+    background: white;
+    padding: 60px 70px;
+    border-radius: 15px;
+    box-shadow: 1px 4px 10px 0px #9e9a9adb;
+  }
+}
+
+.center {
+  text-align: center;
+  padding-top: 30vh;
+}

@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-console": "off",
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn",
+    "consistent-return": "off",
+    "func-names": "off",
+    "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
+    "node/no-unpublished-require": "off",
+    "no-restricted-globals": "off"
+  }
+}
